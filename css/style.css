@@ -1,0 +1,8 @@
+#wrapper{
+    background-color:black;
+}
+
+#logo{
+    background-image: url("img/logo-white-xl.png");
+    margin: auto;
+}
