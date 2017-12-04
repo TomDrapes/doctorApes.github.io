@@ -1,0 +1,73 @@
+/*Calculator stuff*/
+
+
+#calculator{
+    display: block;
+    background-color: rgb(245, 243, 243);
+    width: 302px;
+    height: 476px;
+    padding: 6px 0px;    
+    border-radius: 15px;    
+    box-shadow:1px 1px 15px 10px rgb(196, 196, 196) inset, 10px 10px 15px rgb(14, 143, 143);
+    /*margin: 5px;*/        
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Share Tech Mono;
+}
+
+h6{
+    margin-left: 15px;
+    font-family: Share Tech Mono, Arial, Helvetica, sans-serif;    
+    font-weight: bold;
+    
+}
+#screen{
+    float: right;
+    text-align: right;
+    font-size:34px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    padding: 3px 3px;
+    width: 90%;
+    height: 80px;
+    background-color: rgb(120, 148, 129);
+    border: 2px inset rgb(90, 112, 97);
+    border-radius: 5px;
+}
+
+#buttons{
+    padding: 6px;
+}
+
+#equals{
+    width:276px;
+    height:40px;
+    padding: 0px;
+}
+
+#clear{
+    background-color: rgb(173, 77, 77);
+    border-bottom: 5px solid;
+    border-bottom-color: rgb(109, 49, 49);
+}
+
+#clear:active{
+    border-bottom: 0px;
+}
+
+.button{
+    background-color: rgb(93, 91, 114);
+    color: white;
+    width: 60px;
+    height: 60px;
+    margin: 6px 6px;
+    float: left;
+    border-bottom: 5px solid;
+    border-bottom-color: rgb(53, 52, 65);
+    font-size:22px;
+}
+.button:active{
+    border-bottom: 0px;
+    
+}

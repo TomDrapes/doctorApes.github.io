@@ -8,8 +8,13 @@
     <meta name="author" content="Tom Drapes">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <link rel="stylesheet" type="text/css" href="css/calc.css"> 
+    <link rel="stylesheet" type="text/css" href="css/simon.css"> 
+    <link rel="stylesheet" type="text/css" href="css/pomodoro.css"> 
+    
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css"> 
     <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -17,7 +22,7 @@
         
         <a href="#header"><img class="link" src="img/cube-logo-white.png" alt="logo" width="50" height="50"></a>
         <div id="aboutnav"><a href="#about">About</a></div>
-        <div id="portnav"><a href="#portfolio">Portfolio</a></div>
+        <div id="portnav"><a href="#folio">Portfolio</a></div>
         <div id="contactnav"><a href="#about">Contact</a></div>
         <a href="https://github.com/doctorApes"><i class="link fa fa-github-square" style="font-size:38px;"></i></a>
         <a href="https://www.twitter.com"><i class="link fa fa-twitter-square" style="font-size:38px;"></i></a>
@@ -52,30 +57,25 @@
                 </div>
             </div>
         </div><!--End about-->
-        <div id="portfolio" >
-            
-            <div id="overlay2">
-                    
-                <button id="left">&#10094;</button>
-                <button id="right">&#10095;</button>
-            </div>
-        </div>
-        <div id="calc">
+        
+        <div id="folio">
+            <button id="left">&#10094;</button>
+            <button id="right">&#10095;</button>
             <div id="calculator">
                     <h6>CALCULATOR TD-X</h6>
                     <div id="screen"></div><!--End screen-->
                     <div id="buttons">
-                        <button id="1" class="button btn" value="1">1</button>
-                        <button id="2" class="button btn" value="2">2</button>
-                        <button id="3" class="button btn" value="3">3</button>
+                        <button id="7" class="button btn" value="7">7</button>
+                        <button id="8" class="button btn" value="8">8</button>
+                        <button id="9" class="button btn" value="9">9</button>            
                         <button class="button btn" id="clear" value="ac">AC</button>
                         <button id="4" class="button btn" value="4">4</button>
                         <button id="5" class="button btn" value="5">5</button>
                         <button id="6" class="button btn" value="6">6</button>
                         <button class="button btn" id="divide" value="/">&#247</button>
-                        <button id="7" class="button btn" value="7">7</button>
-                        <button id="8" class="button btn" value="8">8</button>
-                        <button id="9" class="button btn" value="9">9</button>
+                        <button id="1" class="button btn" value="1">1</button>
+                        <button id="2" class="button btn" value="2">2</button>
+                        <button id="3" class="button btn" value="3">3</button>
                         <button class="button btn" id="multiply" value="*">&times</button>
                         <button class="button btn" id="decimal" value=".">.</button>
                         <button id="0" class="button btn" value="0">0</button>
@@ -87,12 +87,51 @@
                     </div><!--End buttons-->
             
             </div><!--End calculator-->
-        </div><!--End calc-->
+            <div id=pomodoro>
+                    <div id="label">Pomodoro</div>      
+                    <div id="timer">25:00</div><!--End Timer-->
+                    <div id="pombuttons">
+                        <button id="minus" class="button btn">-</button>
+                        <button id="start" class="button btn">Start</button>
+                        <button id="plus" class="button btn">+</button>
+                    </div>                    
+                    
+            </div><!--End pomodoro-->
+
+            <div id="simon">
+                    <div id="topLeft" class="cell"></div>
+                    <div id="topRight" class="cell"></div>
+                    
+                    <div id="bottomLeft" class="cell"></div>
+                    <div id="bottomRight" class="cell"></div>
+                
+                    <div id="innerCircle">
+                        <div id="name">Simon<p>TM</p></div>
+                        <div id="simon-buttons">
+                            <div id="b1" class="inline">
+                                <div id="button1">--</div>
+                                <div id="count">Count</div>
+                            </div>
+                            <div id="b2" class="inline">
+                                <div id="button2" ></div>
+                                <div id="simon-start" >Start</div>
+                            </div>
+                            <div id="b3" class="inline">
+                            <div id="button3" ></div>    
+                            <div id="strict">Strict</div>
+                            </div>        
+                        </div>
+            
+                    </div>
+            </div>
+        </div><!--End portfolio-->
     </div><!--End wrapper-->
     
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/portfolio.js"></script>
     <script src="js/calc.js"></script>
+    <script src="js/pomodoro.js"></script>
+    <script src="js/simon.js"></script>
 </body>
 </html>

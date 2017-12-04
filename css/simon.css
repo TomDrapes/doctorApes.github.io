@@ -1,0 +1,161 @@
+#simon{
+    display: none;
+    width: 500px;
+    height: 500px;  
+    position: relative; 
+    top: 0vh;
+    margin: auto; 
+    background-color: black;
+    border-radius: 100%;
+    box-shadow: 10px 10px 15px rgb(160, 124, 76);    
+}
+.cell{
+    width: 50%;
+    height: 50%;
+    float:left;   
+}
+.cell:hover{
+    cursor: pointer;
+}
+#topLeft{
+    border-top-left-radius: 100%;
+    background-color: rgb(97, 184, 97);    
+    box-shadow: 2px 2px 15px 5px rgb(134, 231, 134) inset;    
+    border-style: solid;
+    border-color: black;
+    border-width: 18px 8px 8px 18px;
+}
+#topLeft:active{
+    background-color:rgb(117, 228, 135) !important;
+    box-shadow: none !important;
+}
+
+#topRight{
+    border-top-right-radius: 100%;
+    background-color: rgb(253, 106, 106);
+    box-shadow: 2px 2px 15px 5px rgb(248, 177, 177) inset;    
+    border-style: solid;
+    border-color: black;
+    border-width: 18px 18px 8px 8px;
+}#topRight:active{
+    background-color: rgb(255, 74, 74) !important;
+    box-shadow: none !important;
+}
+
+#bottomLeft{
+    border-bottom-left-radius: 100%;
+    background-color: rgb(255, 255, 110);
+    box-shadow: 2px 2px 15px 5px rgb(255, 255, 167) inset;        
+    border-style: solid;
+    border-color: black;
+    border-width: 8px 8px 18px 18px;
+}
+#bottomLeft:active{
+    background-color: rgb(251, 255, 0) !important;
+    box-shadow: none !important;
+}
+
+#bottomRight{
+    border-bottom-right-radius: 100%;
+    background-color: rgb(132, 132, 255);
+    box-shadow: 2px 2px 15px 5px rgb(181, 181, 255) inset;        
+    border-style: solid;
+    border-color: black;
+    border-width: 8px 18px 18px 8px;
+}
+#bottomRight:active{
+    background-color: rgb(132, 189, 255) !important;
+    box-shadow: none !important;
+}
+
+#innerCircle{
+    width: 250px;
+    height: 250px;
+    border: 8px solid black;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -125px 0 0 -125px;
+    background-color: rgb(216, 216, 216);
+    padding: 5px;    
+}
+
+#name{
+    text-align: center;
+    padding-left: 12px;    
+    line-height: 150px;
+    font-size: 86px;
+    font-weight: bold;
+    font-family: Teko, Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    width:224px;
+    height:112px;
+    border-top-left-radius: 112px;
+    border-top-right-radius: 112px;
+    
+}
+p{
+    display: inline;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.inline{
+    display: inline-block;  
+    margin: 20px 5px 0px 5px;      
+}
+
+
+#simon-buttons{
+    text-align: center;
+    padding-right: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;         
+}
+#button1{
+    width:50px;
+    height: 30px;
+    color: rgb(192, 34, 34);
+    font-size: 26px;
+    font-family: Share Tech Mono, monospace, Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    background-color: rgb(41, 13, 13);
+    border: 1px inset rgb(179, 176, 176);
+    border-radius: 5px;
+}
+
+#button2{
+    width:30px;
+    height: 30px;
+    background-color: rgb(223, 32, 32);
+    border: 1px ridge rgb(104, 2, 2);
+    border-radius: 100%;
+    box-shadow: 2px 2px 5px rgb(141, 140, 140),
+    2px 2px 5px rgb(104, 2, 2) inset;
+}
+#button2:active{
+    background-color: red;
+    box-shadow: 1px 1px 5px rgb(141, 140, 140),
+    2px 2px 5px rgb(104, 2, 2) inset;
+}
+
+#button3{
+    width:30px;
+    height: 30px;
+    background-color: rgb(223, 194, 32);
+    border: 1px ridge rgb(88, 92, 10);
+    border-radius: 100%;
+    box-shadow: 2px 2px 5px rgb(141, 140, 140), 
+    2px 2px 5px rgb(153, 161, 33) inset;
+}
+#button3:active{
+    background-color: yellow;
+    box-shadow: 1px 1px 5px rgb(141, 140, 140), 
+    2px 2px 5px rgb(153, 161, 33) inset;
+}
+
+#b2:hover, #b3:hover{
+    cursor: pointer;
+}
