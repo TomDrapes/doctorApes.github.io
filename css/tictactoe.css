@@ -1,0 +1,118 @@
+#tictactoe{
+    display:none;
+    background-color: rgb(228, 226, 226);
+    width: 500px;
+    height: 500px;
+    padding: 21px;    
+    margin-left: auto;
+    margin-right: auto;    
+    box-shadow: 10px 10px 15px rgb(56, 92, 56), 1px 1px 30px 20px rgb(184, 181, 181) inset;
+    border-radius: 15px;
+    font-family: 'Permanent Marker', Arial, Helvetica, sans-serif;
+    z-index: 1;
+    
+}
+
+#t-overlay{
+    font-family: 'Permanent Marker', Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 8%;
+    text-shadow: 3px 3px #000;
+    color: white;
+    position: fixed;
+    display: none; 
+    width: 500px; 
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15vh; 
+    border-radius: 15px; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    
+}
+#t-overlay2{
+    font-family: 'Permanent Marker', Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 8%;
+    text-shadow: 3px 3px #000;
+    color: white;
+    position: fixed;
+    display: none; 
+    width: 500px; 
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15vh; 
+    border-radius: 15px;     
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    
+}
+#title{
+    font-size:56px;
+}
+#one, #two, #O, #X{
+    margin: 15px;
+    font-size: 26px;
+    display: inline-block;
+}
+
+#one:hover{
+    color: rgb(218, 107, 107);
+    cursor: pointer; 
+}
+#two:hover{
+    color: rgb(130, 194, 214);
+    cursor: pointer; 
+}
+
+#X{
+    font-size: 124px;
+}
+#O{
+    font-size: 124px;
+}
+#X:hover{
+    color: rgb(218, 107, 107);
+    cursor: pointer; 
+}
+#O:hover{
+    color: rgb(130, 194, 214);
+    cursor: pointer; 
+}
+
+#border{
+    width:458px;
+    height:458px;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    
+}
+
+.t-cell{
+    width: 150px;
+    height: 150px;
+    float: left;
+    border: 1px solid #000;
+    background-color: rgb(228, 226, 226);
+    box-shadow: 0px 0px 30px 0px rgb(192, 192, 192) inset;
+    text-align: center;
+    text-shadow: 3px 3px #000;
+    font-size:108px;
+    line-height: 150px;
+    
+    
+}
+
+.t-cell:hover{
+    cursor: pointer;
+    opacity: 0.95;
+    background-color: rgb(182, 180, 180);
+}

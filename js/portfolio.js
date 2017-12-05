@@ -5,14 +5,14 @@ $(document).ready(function (){
     $("#left").on("click", function(){
         console.log("clicked");
         if(currentImage === 0){
-            currentImage = 2;            
+            currentImage = 3;            
         }else{
             currentImage -= 1;
         }
         changeImage(currentImage);
     });
     $("#right").on("click", function(){
-        if(currentImage === 2){
+        if(currentImage === 3){
             currentImage = 0;            
         }else{
             currentImage += 1;
@@ -35,6 +35,12 @@ $(document).ready(function (){
             $("#simon").css("display", "block");
             $("#folio").css("background-color", "rgb(255, 199, 121)");
             break;
+            case 3:turnOffAll();
+            $("#tictactoe").css("display", "block");
+            $("#t-overlay").css("display", "block");
+            
+            $("#folio").css("background-color", "rgb(133, 212, 133)");
+            break;
             
             
         }
@@ -44,5 +50,8 @@ $(document).ready(function (){
         $("#pomodoro").css("display", "none");
         $("#calculator").css("display", "none");
         $("#simon").css("display", "none");
+        $("#tictactoe").css("display", "none");
+        $("#t-overlay").css("display", "none");
+        $("#t-overlay2").css("display", "none");
     }
 });
