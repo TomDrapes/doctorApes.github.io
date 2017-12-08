@@ -85,7 +85,7 @@ h3{
 }
 
 p{
-    font-size: 16px;
+    font-size: 24px;
 }
 
 #portfolio{
@@ -156,6 +156,73 @@ a:hover{
     width:100%;
     height:100%;
     padding: 15vh 10vw;
-    background-color: rgb(20, 206, 209);    
-    
+    background-color: rgb(20, 206, 209);       
 }
+
+#contact{
+    background-color:rgb(211, 211, 211);    
+    height: auto;
+    width:100%;
+    text-align: center;
+    padding-top: 3vh;
+    padding-bottom: 5vh; 
+    color: black;    
+}
+
+.text{
+    font-size: 24px;    
+}
+
+.circle{
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    background-color: white;
+    margin: 20px;
+    display: inline-block;
+    padding: 20px;    
+}
+
+.circle:hover{
+    opacity: 0.55;
+}
+
+/*
+ * Contact form stuff
+ */
+
+ /* Style inputs with type="text", select elements and textareas */
+ input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 10px;
+} 
+
