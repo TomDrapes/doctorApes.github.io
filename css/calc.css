@@ -1,7 +1,7 @@
 /*Calculator stuff*/
 
 
-#calculator{
+.calculator{
     display: block;
     background-color: rgb(245, 243, 243);
     width: 302px;
@@ -20,7 +20,7 @@ h6{
     font-weight: bold;
     
 }
-#screen{
+.screen{
     float: right;
     text-align: right;
     font-size:34px;
@@ -35,7 +35,7 @@ h6{
     border-radius: 5px;
 }
 
-#buttons{
+.buttons{
     padding: 6px;
 }
 
