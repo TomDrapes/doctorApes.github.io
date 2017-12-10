@@ -1,4 +1,4 @@
-#tictactoe{
+.tictactoe{
     display:none;
     background-color: rgb(228, 226, 226);
     width: 500px;
@@ -14,7 +14,7 @@
     
 }
 
-#t-overlay{
+.t-overlay{
     font-family: 'Permanent Marker', Arial, Helvetica, sans-serif;
     text-align: center;
     padding-top: 30%;
@@ -30,7 +30,7 @@
     background-color: rgba(0,0,0,0.5);
     position: absolute;
 }
-#t-overlay2{
+.t-overlay2{
     font-family: 'Permanent Marker', Arial, Helvetica, sans-serif;
     text-align: center;
     padding-top: 30%;
@@ -46,44 +46,44 @@
     background-color: rgba(0,0,0,0.5);
     
 }
-#title{
+.title{
     font-size:56px;
 }
-#one, #two{
+.one, .two{
     margin: 15px;
     font-size: 26px;
     display: inline-block;
 }
 
-#one:hover{
+.one:hover{
     color: rgb(218, 107, 107);
     cursor: pointer; 
 }
-#two:hover{
+.two:hover{
     color: rgb(130, 194, 214);
     cursor: pointer; 
 }
 
-#X{
+.X{
     font-size: 76px;
     display: inline-block;
     margin-left:20px;
 }
-#O{
+.O{
     font-size: 76px;
     display: inline-block;
     margin-right: 20px;
 }
-#X:hover{
+.X:hover{
     color: rgb(218, 107, 107);
     cursor: pointer; 
 }
-#O:hover{
+.O:hover{
     color: rgb(130, 194, 214);
     cursor: pointer; 
 }
 
-#border{
+.border{
     width:458px;
     height:458px;
     border: 4px solid rgb(0, 0, 0);
