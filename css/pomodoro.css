@@ -1,6 +1,6 @@
 
 
-#pomodoro{
+.pomodoro{
     display: none;
     text-align: center;
     box-sizing: border-box;
@@ -16,17 +16,18 @@
     border-right: 3px solid;
     border-bottom-color: rgb(80, 80, 80);
     border-right-color: rgb(80, 80, 80);
-    padding-top: 44px;
+    padding-top: 4px;
     padding-bottom: 138px;
     box-shadow: 10px 10px 15px rgb(80, 26, 26), 3px 3px 40px 20px rgb(172, 172, 172) inset;
     
 }
-#label{
+.label{
     font-size: 24px;
-    margin-bottom: 30px;   
+    margin-bottom: 30px;
+    color: #000;
 }
 
-#timer{
+.timer{
     height:80px;
     width:280px;
     line-height: 80px;
@@ -37,12 +38,12 @@
     
 }
 
-#pombuttons{
+.pombuttons{
     width: 100%;
     height: auto;
     padding: 3vh 3vw;
 }
-#minus,#start,#plus{
+.minus, .start, .plus{
     display:inline-block;
     background-color: rgb(65, 64, 64);
     color:white;
@@ -52,22 +53,23 @@
     border-right: 3px solid;
     border-color: rgb(34, 34, 34);
     
+    
 }
-#start{
+.start{
     font-size: 24px;
     width:90px;
-    height:auto;
+    height:56px;
     padding: 5px;
     border-radius: 15px;
 }
-#minus{
+.minus{
     font-size: 24px;
     width:32px;
     height:32px;
     line-height: 24px;
     border-radius: 150px;
 }
-#plus{
+.plus{
     font-size: 24px;
     width:32px;
     height:32px;
@@ -75,7 +77,11 @@
     border-radius: 150px;
 }
 
-#minus:active, #plus:active, #start:active{
+.minus:active, .plus:active, .start:active{
     border-bottom: 0px;
     border-right: 0px;
+}
+
+.minus:hover, .plus:hover, .start:hover{
+    color: white;
 }
