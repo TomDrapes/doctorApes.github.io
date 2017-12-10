@@ -1,4 +1,4 @@
-#simon{
+.simon{
     display: none;
     width: 500px;
     height: 500px;  
@@ -17,7 +17,7 @@
 .cell:hover{
     cursor: pointer;
 }
-#topLeft{
+.topLeft{
     border-top-left-radius: 100%;
     background-color: rgb(97, 184, 97);    
     box-shadow: 2px 2px 15px 5px rgb(134, 231, 134) inset;    
@@ -25,24 +25,25 @@
     border-color: black;
     border-width: 18px 8px 8px 18px;
 }
-#topLeft:active{
+.topLeft:active{
     background-color:rgb(117, 228, 135) !important;
     box-shadow: none !important;
 }
 
-#topRight{
+.topRight{
     border-top-right-radius: 100%;
     background-color: rgb(253, 106, 106);
     box-shadow: 2px 2px 15px 5px rgb(248, 177, 177) inset;    
     border-style: solid;
     border-color: black;
     border-width: 18px 18px 8px 8px;
-}#topRight:active{
+}
+.topRight:active{
     background-color: rgb(255, 74, 74) !important;
     box-shadow: none !important;
 }
 
-#bottomLeft{
+.bottomLeft{
     border-bottom-left-radius: 100%;
     background-color: rgb(255, 255, 110);
     box-shadow: 2px 2px 15px 5px rgb(255, 255, 167) inset;        
@@ -50,12 +51,12 @@
     border-color: black;
     border-width: 8px 8px 18px 18px;
 }
-#bottomLeft:active{
+.bottomLeft:active{
     background-color: rgb(251, 255, 0) !important;
     box-shadow: none !important;
 }
 
-#bottomRight{
+.bottomRight{
     border-bottom-right-radius: 100%;
     background-color: rgb(132, 132, 255);
     box-shadow: 2px 2px 15px 5px rgb(181, 181, 255) inset;        
@@ -63,12 +64,12 @@
     border-color: black;
     border-width: 8px 18px 18px 8px;
 }
-#bottomRight:active{
+.bottomRight:active{
     background-color: rgb(132, 189, 255) !important;
     box-shadow: none !important;
 }
 
-#innerCircle{
+.innerCircle{
     width: 250px;
     height: 250px;
     border: 8px solid black;
@@ -81,7 +82,7 @@
     padding: 5px;    
 }
 
-#name{
+.name{
     text-align: center;
     padding-left: 12px;    
     line-height: 150px;
@@ -108,13 +109,13 @@ p{
 }
 
 
-#simon-buttons{
+.simon-buttons{
     text-align: center;
     padding-right: 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;         
 }
-#button1{
+.button1{
     width:50px;
     height: 30px;
     color: rgb(192, 34, 34);
@@ -126,7 +127,7 @@ p{
     border-radius: 5px;
 }
 
-#button2{
+.button2{
     width:30px;
     height: 30px;
     background-color: rgb(223, 32, 32);
@@ -135,13 +136,13 @@ p{
     box-shadow: 2px 2px 5px rgb(141, 140, 140),
     2px 2px 5px rgb(104, 2, 2) inset;
 }
-#button2:active{
+.button2:active{
     background-color: red;
     box-shadow: 1px 1px 5px rgb(141, 140, 140),
     2px 2px 5px rgb(104, 2, 2) inset;
 }
 
-#button3{
+.button3{
     width:30px;
     height: 30px;
     background-color: rgb(223, 194, 32);
@@ -150,12 +151,12 @@ p{
     box-shadow: 2px 2px 5px rgb(141, 140, 140), 
     2px 2px 5px rgb(153, 161, 33) inset;
 }
-#button3:active{
+.button3:active{
     background-color: yellow;
     box-shadow: 1px 1px 5px rgb(141, 140, 140), 
     2px 2px 5px rgb(153, 161, 33) inset;
 }
 
-#b2:hover, #b3:hover{
+.b2:hover, .b3:hover{
     cursor: pointer;
 }
