@@ -177,8 +177,7 @@ p{
         transform: scale(0.7);
         
     }
-    .tic{
-        border: 1px solid red;
+    .tic{        
         margin-left: -20%;
         margin-top: -20%;
     }
