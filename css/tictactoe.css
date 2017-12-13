@@ -111,3 +111,9 @@
     opacity: 0.95;
     background-color: rgb(182, 180, 180);
 }
+
+@media screen and (max-width: 700px){
+    .tictactoe{
+        transform: scale(0.3);
+    }
+}

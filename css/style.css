@@ -13,6 +13,7 @@ body{
 
 .overlay{
     background-color: rgba(0,0,0,0.55);
+    padding-top: 22vh;  
 }
 
 .center{
@@ -50,25 +51,23 @@ body{
 
 .header{ 
     background: url("../img/profile-bg.jpg") fixed;
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;    
 }
 
-#overlay{    
-    padding-top: 22vh;    
-}
 
 .logo{             
-    width: 1000px;
-    height: 357px;
-    background: url("../img/logo-white-sm.png"); 
-    background-size: cover;                   
+    width: 90%;
+    height: 70%;
+    /*background: url("../img/logo-white-sm.png"); 
+    background-size: cover;*/
 }
 
 .about{ 
     background-color:rgb(211, 211, 211);        
     padding-top: 2vh;
     padding-bottom: 3vh;
+    
 }
 
 .about-boxes{
@@ -78,6 +77,11 @@ body{
     width:30%;
     height: auto;
     margin-top: 10px;    
+}
+
+.hex{
+    width:50%;
+    height: 50%;
 }
 
 i{
@@ -91,12 +95,13 @@ h2{
 }
 
 h3{
-    font-size: 44px;
+    font-size: 200%;
 }
 
 .para { 
     font-size: 18px;
-    text-align: center;    
+    text-align: center;
+    padding: 10px;  
 }
 
 .left-arrow, .right-arrow{
@@ -107,7 +112,7 @@ h3{
     border: none;    
     margin-top: 30vh;
     border-radius: 100%;
-    z-index: 3;
+    z-index: 1000;
 }
 .left-arrow:hover, .right-arrow:hover{
     background-color: rgba(211, 211, 211, 0.75);
@@ -204,4 +209,61 @@ input[type=submit]:hover {
     padding: 10px;
     margin-bottom: 10px;
 } 
+
+@media screen and (max-width: 700px){
+
+    .fullScreen{
+        width: 100%;
+        height: auto;     
+    }
+
+    .header{
+        background-size: 100% 100%;        
+    }
+    
+
+    .navbar{
+        display: none;
+    }
+
+    .overlay{
+        padding-top: 4vh;
+    }
+
+    h2{
+        font-size: 44px;
+    }
+
+    h3{
+        font-size: 24px;
+    }
+
+    .para{
+        font-size: 12px;
+    }
+
+    .about{
+        height: 100%;
+        overflow: auto;
+    }
+
+    .about-boxes{
+        width: auto;
+        margin-right: 2.5%; 
+        text-align: center;   
+    }
+
+   #folio{
+       height: 70vh;
+       padding: 0px;       
+   }
+
+   .left-arrow, .right-arrow{
+       width: 20px;
+       height: 100%;
+       border-radius: 0px;
+       margin: 0px;
+       font-size: 15px;
+   }
+}
 

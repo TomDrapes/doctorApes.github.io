@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Tom Drapes</title>
+    <title>Tom Drapes - Web Developer</title>
     <meta charset="UTF-8">
     <meta name="description" content="Portfolio">
     <meta name="keywords" content="portfolio, web developer, Tom Drapes">
     <meta name="author" content="Tom Drapes">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="css/style.css"> 
     <link rel="stylesheet" type="text/css" href="css/calc.css"> 
@@ -35,28 +36,30 @@
     <div id="wrapper" class="fullScreen">
     
         <div id="header" class="fullScreen header">
-                <div id="overlay" class="fullScreen overlay">
-                        <div id="logo" class="center logo"></div> 
+                <div id="overlay" class="fullScreen overlay text-center">
+                        <!--<div id="logo" class="center logo"></div>-->
+                        <img class="logo" src="img/logo-white-sm.png" width="1000" height="357">
                 </div><!--End overlay-->
                                    
         </div><!--End header-->
 
         <div id="about" class="about fullScreen text-center black-text">
-            <h2>About Me</h2>            
-            <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-            
+            <h2>About Me</h2>
+            <div class="para">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+            </div>
             <div id="skills" class="about-boxes round-edge left">
-                <img src="img/hexagon-1.png" alt="icon" width="200" height="200">
+                <img class="hex" src="img/hexagon-1.png" alt="icon" width="200" height="200">
                 <h3>Experience</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
             <div id="experience" class="about-boxes round-edge left">
-                    <img src="img/hexagon-2.png" alt="icon" width="200" height="200">
+                <img class="hex" src="img/hexagon-2.png" alt="icon" width="200" height="200">
                 <h3>Skills</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
             <div id="qualifications" class="about-boxes round-edge left">
-                    <img src="img/hexagon-3.png" alt="icon" width="200" height="200">
+                <img class="hex" src="img/hexagon-3.png" alt="icon" width="200" height="200">
                 <h3>Qualifications</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
@@ -64,8 +67,10 @@
         </div><!--End about-->
         
         <div id="folio" class="folio fullScreen">
-            <button id="left" class="black-text left left-arrow">&#10094;</button>
+                
+            <button id="left" class="black-text left left-arrow ">&#10094;</button>
             <button id="right" class="black-text right right-arrow">&#10095;</button>
+
             <div id="calculator" class="calculator">
                     <h6>CALCULATOR TD-X</h6>
                     <div id="screen" class="screen"></div><!--End screen-->
@@ -92,6 +97,7 @@
                     </div><!--End buttons-->
             
             </div><!--End calculator-->
+                                
             <div id=pomodoro class="pomodoro">
                     <div id="label" class="label">Pomodoro</div>      
                     <div id="timer" class="timer">25:00</div><!--End Timer-->
@@ -153,6 +159,7 @@
                     <div id="3-3" class="t-cell"></div>                    
                 </div>
             </div><!--End tictactoe-->
+                
         </div><!--End portfolio-->
 
         <div id="contact" class="contact center black-text text-center">

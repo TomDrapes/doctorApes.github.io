@@ -160,3 +160,9 @@ p{
 .b2:hover, .b3:hover{
     cursor: pointer;
 }
+
+@media screen and (max-width: 700px){
+    .simon{
+        transform: scale(0.5);
+    }
+}
