@@ -1,5 +1,7 @@
 
-
+.pom{
+    padding-top: 5vh;
+}
 .pomodoro{
     display: none;
     text-align: center;
@@ -41,7 +43,10 @@
 .pombuttons{
     width: 100%;
     height: auto;
-    padding: 3vh 3vw;
+    padding: 3vh 3vh;
+    padding-left: 13%;
+    padding-right: auto;
+    
 }
 .minus, .start, .plus{
     display:inline-block;
