@@ -1,10 +1,13 @@
 .simon{
     display: none;
+    /*width: 50%;
+    height: 0;*/
     width: 500px;
-    height: 500px;  
+    height: 500px;     
     position: relative; 
     top: 0vh;
-    margin: auto; 
+    margin-left: auto;
+    margin-right: auto; 
     background-color: black;
     border-radius: 100%;
     box-shadow: 10px 10px 15px rgb(160, 124, 76);    
@@ -70,6 +73,8 @@
 }
 
 .innerCircle{
+    /*width: 25%;
+    height: 0;*/
     width: 250px;
     height: 250px;
     border: 8px solid black;
@@ -163,6 +168,31 @@ p{
 
 @media screen and (max-width: 700px){
     .simon{
-        transform: scale(0.5);
+        transform: scale(0.8);
+        width: 290px;
+        height: 290px;       
+    }
+
+    .innerCircle{
+        transform: scale(0.7);
+        
+    }
+    .tic{
+        border: 1px solid red;
+        margin-left: -20%;
+        margin-top: -20%;
     }
 }
+
+/*@media screen and (max-width: 480px){
+    .simon{
+        transform: scale(0.6);
+        width: 290px;
+        height: 290px;
+        
+    }
+
+    .innerCircle{
+        transform: scale(0.6);
+    }
+}*/
