@@ -2,7 +2,7 @@ $(document).ready(function (){
     var currentImage = 0;
     console.log("ready");
 
-    $("#folio-expand").on("click", function(){
+    $(".l-arrow").on("click", function(){
         console.log("clicked");
         if(currentImage === 0){
             currentImage = 3;            
@@ -11,7 +11,7 @@ $(document).ready(function (){
         }
         changeImage(currentImage);
     });
-    $("#right").on("click", function(){
+    $(".r-arrow").on("click", function(){
         if(currentImage === 3){
             currentImage = 0;            
         }else{
@@ -70,7 +70,7 @@ $(document).ready(function (){
     });
     
     var folioBool = true;
-    $("#folio").on("click", function(){
+    $("#port").on("click", function(){
         var windowWidth = window.outerWidth;
         if(windowWidth < 700){
             if(folioBool){
