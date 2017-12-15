@@ -1,9 +1,10 @@
 
 .pom{
     padding-top: 5vh;
+
 }
 .pomodoro{
-    display: none;
+    display: none;    
     text-align: center;
     box-sizing: border-box;
     background-color: rgb(245, 243, 243);
@@ -93,6 +94,6 @@
 
 @media screen and (max-width: 700px){
     .pomodoro{
-        transform: scale(0.5);
+        transform: scale(0.7);
     }
 }

@@ -19,8 +19,7 @@
     text-align: center;
     padding-top: 30%;
     text-shadow: 3px 3px #000;
-    color: white;
-    /*position: fixed;*/
+    color: white;    
     display: none; 
     width: 500px; 
     height: 500px;    
@@ -113,7 +112,45 @@
 }
 
 @media screen and (max-width: 700px){
+
     .tictactoe{
-        transform: scale(0.4);
+        padding: 11px;
+        margin-top: 15%;
+    }
+    .tictactoe, .t-overlay, .t-overlay2{        
+        width: 251px;
+        height: 251px;               
+    }
+
+    .border{
+        width:229px;
+        height:229px;
+        border: 2px solid rgb(0, 0, 0);
+    }
+
+    .t-cell{
+        width: 75px;
+        height: 75px;
+        font-size: 54px;
+        line-height: 75px;
+    }
+
+    .title{
+        font-size:28px;
+    }
+    .one, .two{
+        margin: 7px;
+        font-size: 13px;
+        display: inline-block;
+    }
+    .X{
+        font-size: 38px;
+        display: inline-block;
+        margin-left:10px;
+    }
+    .O{
+        font-size: 38px;
+        display: inline-block;
+        margin-right: 10px;
     }
 }

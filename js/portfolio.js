@@ -2,7 +2,7 @@ $(document).ready(function (){
     var currentImage = 0;
     console.log("ready");
 
-    $("#left").on("click", function(){
+    $("#contact").on("click", function(){
         console.log("clicked");
         if(currentImage === 0){
             currentImage = 3;            
