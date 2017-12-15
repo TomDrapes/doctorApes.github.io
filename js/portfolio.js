@@ -2,7 +2,7 @@ $(document).ready(function (){
     var currentImage = 0;
     console.log("ready");
 
-    $(".l-arrow").on("click", function(){
+    $(".l-arrow, .left-arrow").on("click", function(){
         console.log("clicked");
         if(currentImage === 0){
             currentImage = 3;            
@@ -11,7 +11,7 @@ $(document).ready(function (){
         }
         changeImage(currentImage);
     });
-    $(".r-arrow").on("click", function(){
+    $(".r-arrow, .right-arrow").on("click", function(){
         if(currentImage === 3){
             currentImage = 0;            
         }else{
@@ -56,14 +56,16 @@ $(document).ready(function (){
     }
 
     var aboutBool = true;
-    $("#about").on("click", function(){
-        var windowWidth = window.outerWidth;
+    $("#about").on("click", function(){        
+        var windowWidth = window.outerWidth; 
         if(windowWidth < 700){
             if(aboutBool){
                 $("#about-expand").css("display", "block");
+                $("#about").css("height", "auto");
                 aboutBool = !aboutBool;
             }else{
                 $("#about-expand").css("display", "none");
+                $("#about").css("height", "100%");
                 aboutBool = !aboutBool;
             }
         }
@@ -75,9 +77,11 @@ $(document).ready(function (){
         if(windowWidth < 700){
             if(folioBool){
                 $("#folio-expand").css("display", "block");
+                $("#folio").css("height", "auto");
                 folioBool = !folioBool;
             }else{
                 $("#folio-expand").css("display", "none");                
+                $("#folio").css("height", "100%");
                 folioBool = !folioBool;
             }
         }
@@ -89,9 +93,11 @@ $(document).ready(function (){
         if(windowWidth < 700){
             if(contactBool){
                 $("#contact-expand").css("display", "block");
+                $("#contact").css("height", "auto");
                 contactBool = !contactBool;
             }else{
                 $("#contact-expand").css("display", "none");                
+                $("#contact").css("height", "100%");
                 contactBool = !contactBool;
             }
         }
