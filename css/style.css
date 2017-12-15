@@ -144,6 +144,9 @@ a:hover{
     padding-top: 10vh;
     background-color: rgb(20, 206, 209);       
 }
+#folio-title{
+    display: none;
+}
 
 .contact{
     background-color:rgb(211, 211, 211);    
@@ -218,7 +221,8 @@ input[type=submit]:hover {
     }
 
     .header{
-        background-size: 100% 100%;        
+        background-size: 100% 100%;  
+        height: 25%;      
     }
     
 
@@ -245,6 +249,7 @@ input[type=submit]:hover {
     .about{
         height: 100%;
         overflow: auto;
+        cursor: pointer;
     }
 
     .about-boxes{
@@ -254,20 +259,38 @@ input[type=submit]:hover {
     }
 
    .folio{
-       height: auto;       
-       padding-top: 5px;
-       padding-bottom: 30px;
+       height: 25%;       
+       /*padding-top: 5px;
+       padding-bottom: 30px;*/
+       padding-top: 2vh;
+       padding-bottom: 3vh;
+       cursor: pointer;       
+   }
+   #folio-title{
+       display: block;
+       text-align: center;
+       color: #000;
    }
 
-   .left-arrow, .right-arrow{
-       /*width: 20px;
-       height: 100%;
-       border-radius: 0px;
-       margin: 0px;
-       font-size: 15px;*/
+   #folio-expand{
        display: none;
    }
 
+   .left-arrow, .right-arrow{
+       display: none;
+   }
+
+   #about-expand{
+       display: none;
+   }
+
+   #contact{
+       cursor: pointer;
+   }
+
+   #contact-expand{
+       display: none;
+   }
    
 }
 

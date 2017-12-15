@@ -2,7 +2,7 @@ $(document).ready(function (){
     var currentImage = 0;
     console.log("ready");
 
-    $("#contact").on("click", function(){
+    $("#folio-expand").on("click", function(){
         console.log("clicked");
         if(currentImage === 0){
             currentImage = 3;            
@@ -55,25 +55,47 @@ $(document).ready(function (){
         $("#t-overlay2").css("display", "none");
     }
 
+    var aboutBool = true;
+    $("#about").on("click", function(){
+        var windowWidth = window.outerWidth;
+        if(windowWidth < 700){
+            if(aboutBool){
+                $("#about-expand").css("display", "block");
+                aboutBool = !aboutBool;
+            }else{
+                $("#about-expand").css("display", "none");
+                aboutBool = !aboutBool;
+            }
+        }
+    });
     
-        
-    /*$(window).resize(function() {    
-        var folioHeight = $('.folio').height();
-        var calcHeight = $('.calculator').height();
-        var pomHeight = $('.pomodoro').height();
-        var ticHeight = $('.tictactoe').height();
-        var simonHeight = $('.simon').height();        
-        switch(currentImage){
-            case 0: $("#folio").css({"padding-top":(folioHeight-calcHeight*0.7)/6+"px"});
-            console.log((folioHeight-calcHeight*0.7)/4);
-            break;
-            case 1: $("#folio").css({"padding-top":(folioHeight-pomHeight)/2+"px"});
-            break;
-            case 2: $("#folio").css({"padding-top":(folioHeight-simonHeight)/2+"px"});
-            break;
-            case 3: $("#folio").css({"padding-top":(folioHeight-ticHeight)/2+"px"});
-            break;
-        }      
-    });*/
+    var folioBool = true;
+    $("#folio").on("click", function(){
+        var windowWidth = window.outerWidth;
+        if(windowWidth < 700){
+            if(folioBool){
+                $("#folio-expand").css("display", "block");
+                folioBool = !folioBool;
+            }else{
+                $("#folio-expand").css("display", "none");                
+                folioBool = !folioBool;
+            }
+        }
+    });
+    
+    var contactBool = true;
+    $("#contact").on("click", function(){
+        var windowWidth = window.outerWidth;
+        if(windowWidth < 700){
+            if(contactBool){
+                $("#contact-expand").css("display", "block");
+                contactBool = !contactBool;
+            }else{
+                $("#contact-expand").css("display", "none");                
+                contactBool = !contactBool;
+            }
+        }
+    });  
+
     
 });
