@@ -114,8 +114,7 @@
 @media screen and (max-width: 700px){
 
     .tictactoe{
-        padding: 11px;
-        margin-top: 15%;
+        padding: 11px;        
     }
     .tictactoe, .t-overlay, .t-overlay2{        
         width: 251px;

@@ -54,4 +54,26 @@ $(document).ready(function (){
         $("#t-overlay").css("display", "none");
         $("#t-overlay2").css("display", "none");
     }
+
+    
+        
+    /*$(window).resize(function() {    
+        var folioHeight = $('.folio').height();
+        var calcHeight = $('.calculator').height();
+        var pomHeight = $('.pomodoro').height();
+        var ticHeight = $('.tictactoe').height();
+        var simonHeight = $('.simon').height();        
+        switch(currentImage){
+            case 0: $("#folio").css({"padding-top":(folioHeight-calcHeight*0.7)/6+"px"});
+            console.log((folioHeight-calcHeight*0.7)/4);
+            break;
+            case 1: $("#folio").css({"padding-top":(folioHeight-pomHeight)/2+"px"});
+            break;
+            case 2: $("#folio").css({"padding-top":(folioHeight-simonHeight)/2+"px"});
+            break;
+            case 3: $("#folio").css({"padding-top":(folioHeight-ticHeight)/2+"px"});
+            break;
+        }      
+    });*/
+    
 });

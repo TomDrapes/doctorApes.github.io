@@ -5,22 +5,7 @@ $(document).ready(function(){
     
     var player = [];
     var computer = [];
-    var strict = false;
-
-    
-    /*var cw = $('.simon').width();
-    $('.simon').css({'height':409+'px'});
-    var innerWidth = $('.innerCircle').width();
-    $('.innerCircle').css({'height':102+'px'});         
-
-    $(window).resize(function() {            
-        cw = $('.simon').width();
-        $('.simon').css({'height':cw+'px'});
-        innerWidth = $('.innerCircle').width();
-        $('.innerCircle').css({'height':innerWidth+'px'}); 
-        $("#button1").html(innerWidth);        
-      });*/
-    
+    var strict = false;        
     
     //Store original button colors and shaders
     var ogGreen = $("#topLeft").css("background-color");

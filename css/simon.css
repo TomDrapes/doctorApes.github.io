@@ -1,7 +1,5 @@
 .simon{
-    display: none;
-    /*width: 50%;
-    height: 0;*/
+    display: none;    
     width: 500px;
     height: 500px;     
     position: relative; 
@@ -167,14 +165,10 @@ p{
 }
 
 @media screen and (max-width: 700px){
-    .simon{
-        /*transform: scale(0.8);
-        width: 290px;
-        height: 290px;*/
+    .simon{        
         transform: scale(0.9);
         width: 290px;
-        height:290px;
-        margin-top: 10%;
+        height:290px;        
     }
 
     .innerCircle{
@@ -183,16 +177,3 @@ p{
     }
     
 }
-
-/*@media screen and (max-width: 480px){
-    .simon{
-        transform: scale(0.6);
-        width: 290px;
-        height: 290px;
-        
-    }
-
-    .innerCircle{
-        transform: scale(0.6);
-    }
-}*/
