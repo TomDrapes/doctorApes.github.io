@@ -6,10 +6,11 @@
     <meta name="description" content="Portfolio">
     <meta name="keywords" content="portfolio, web developer, Tom Drapes">
     <meta name="author" content="Tom Drapes">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
+    <link rel="stylesheet" type="text/css" href="css/reset.css"> 
     <link rel="stylesheet" type="text/css" href="css/style.css"> 
     <link rel="stylesheet" type="text/css" href="css/calc.css"> 
     <link rel="stylesheet" type="text/css" href="css/simon.css"> 
@@ -37,9 +38,23 @@
     <div id="wrapper" class="fullScreen">
     
         <div id="header" class="fullScreen header">
-                <div id="overlay" class="fullScreen overlay text-center">
-                        <!--<div id="logo" class="center logo"></div>-->
+                <div id="overlay" class="fullScreen overlay text-center">                        
                         <img class="logo" src="img/logo-white-sm.png" width="1000" height="357">
+                        <div id="head-text" class="head-text">
+                                <div class="wrap">
+                                    <div class="cube">
+                                        <div class="fronty"></div>
+                                        <div class="backy"></div>
+                                        <div class="topy"></div>
+                                        <div class="bottomy"></div>
+                                        <div class="lefty"></div>
+                                        <div class="righty"></div>
+                                    </div>
+                                    <div class="hello"><h2>Tom Drapes</h2><h3>Front-End Developer</h3></div>
+                                </div>
+                                <!--<img src="img/cube-logo-white.png" width="100" height="100">-->
+                                
+                        </div>
                 </div><!--End overlay-->
                                    
         </div><!--End header-->
@@ -206,7 +221,7 @@
                 
         </div><!--End portfolio-->
 
-        <div id="contact" class="contact fullScreen center black-text text-center">
+        <div id="contact" class="contact black-text text-center">
             <h2>Contact Me</h2>
             
             <div id="contact-expand" class="container">

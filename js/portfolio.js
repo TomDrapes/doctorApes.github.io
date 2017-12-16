@@ -61,11 +61,11 @@ $(document).ready(function (){
         if(windowWidth < 700){
             if(aboutBool){
                 $("#about-expand").css("display", "block");
-                $("#about").css("height", "auto");
+                $("#about").css("padding-bottom", "10px");
                 aboutBool = !aboutBool;
             }else{
                 $("#about-expand").css("display", "none");
-                $("#about").css("height", "100%");
+                $("#about").css("padding-bottom", "0px");
                 aboutBool = !aboutBool;
             }
         }
@@ -77,11 +77,11 @@ $(document).ready(function (){
         if(windowWidth < 700){
             if(folioBool){
                 $("#folio-expand").css("display", "block");
-                $("#folio").css("height", "auto");
+                $("#folio").css("padding-bottom", "2vh");
                 folioBool = !folioBool;
             }else{
                 $("#folio-expand").css("display", "none");                
-                $("#folio").css("height", "100%");
+                $("#folio").css("padding-bottom", "0");
                 folioBool = !folioBool;
             }
         }
@@ -93,11 +93,11 @@ $(document).ready(function (){
         if(windowWidth < 700){
             if(contactBool){
                 $("#contact-expand").css("display", "block");
-                $("#contact").css("height", "auto");
+                //$("#contact").css("height", "auto");
                 contactBool = !contactBool;
             }else{
                 $("#contact-expand").css("display", "none");                
-                $("#contact").css("height", "100%");
+                //$("#contact").css("height", "100%");
                 contactBool = !contactBool;
             }
         }

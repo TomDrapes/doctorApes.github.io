@@ -16,10 +16,6 @@ body{
     padding-top: 22vh;  
 }
 
-.center{
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .black-text{
     color: #000;
@@ -55,18 +51,19 @@ body{
     background-repeat: no-repeat;    
 }
 
+.head-text{
+    display: none;
+}
+
 
 .logo{             
     width: 90%;
-    height: 70%;
-    /*background: url("../img/logo-white-sm.png"); 
-    background-size: cover;*/
+    height: 70%;    
 }
 
 .about{ 
-    background-color:rgb(211, 211, 211);        
-    padding-top: 2vh;
-    padding-bottom: 2vh; 
+    background-color:rgb(211, 211, 211);            
+    padding-bottom: 2vh;
     overflow: hidden;
     height: auto;
     width: 100%;   
@@ -236,8 +233,7 @@ a:hover{
     background-color:rgb(211, 211, 211);    
     height: auto;
     width:100%;    
-    padding-top: 2vh;
-    padding-bottom: 2vh;     
+    /*padding-top: 2vh;*/
 }
 
 .text{
@@ -299,6 +295,72 @@ input[type=submit]:hover {
 
 @media screen and (max-width: 700px){
 
+    /* * *    * * *
+     * Cube Stuff *
+     * * *    * * */
+
+     .wrap {
+        perspective: 400px;
+        perspective-origin: 50% 50px;        
+    }
+    .cube {
+        position: relative;
+        width: 100px;
+        transform-style: preserve-3d;
+        margin: auto;
+    }
+
+    .cube div {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+    }
+
+    .backy {
+        transform: translateZ(-50px) rotateY(180deg);
+        border: 2px solid white;
+    }
+    .righty {
+        transform: rotateY(-270deg) translateX(50px);
+        transform-origin: top right;
+        border: 2px solid white;
+    }
+    .lefty {
+        transform: rotateY(270deg) translateX(-50px);
+        transform-origin: center left;
+        border: 2px solid white;
+    }
+    .topy {
+        transform: rotateX(-90deg) translateY(-50px);
+        transform-origin: top center;
+        border: 2px solid white;
+    }
+    .bottomy {
+        transform: rotateX(90deg) translateY(50px);
+        transform-origin: bottom center;
+        border: 2px solid white;
+    }
+    .fronty {
+        transform: translateZ(50px);
+        border: 2px solid white;
+    }
+
+    @keyframes spin {
+        from { transform: rotateY(0); }
+        to { transform: rotateY(360deg); }
+    }
+    
+    .cube {
+        animation: spin 5s infinite linear;
+    }
+    /* End Cube stuff */
+
+    .hello{        
+        position: relative;
+        top: 140px;
+        font-size: 36px;
+    }
+
     .fullScreen{
         width: 100%;
         height: 25%;     
@@ -306,7 +368,17 @@ input[type=submit]:hover {
 
     .header{
         background-size: 100% 100%;  
-        height: 100%;      
+        height: 100vh;      
+    }
+
+    .head-text{
+        display: block;
+        color: white;
+        padding: 0%;
+    }
+
+    .logo{
+        display: none;
     }
     
 
@@ -315,12 +387,12 @@ input[type=submit]:hover {
     }
 
     .overlay{
-        padding-top: 4vh;
+        /*padding-top: 4vh;*/
         height: 100%
     }
 
     h2{
-        font-size: 44px;
+        font-size: 44px;                               
     }
 
     h3{
@@ -333,10 +405,12 @@ input[type=submit]:hover {
     
 
     .about{
-        height: 100%;
+        height: auto;
         overflow: auto;
         cursor: pointer;
-        background-color:rgb(214, 105, 105);
+        background-color:rgb(214, 105, 105); 
+        padding-bottom: 0;
+                
     }
 
     .about-boxes{
@@ -346,11 +420,9 @@ input[type=submit]:hover {
     }
 
    .folio{
-       height: 100%;       
-       /*padding-top: 5px;
-       padding-bottom: 30px;*/
-       padding-top: 2vh;
-       padding-bottom: 2vh;
+       height: auto;
+       padding-top: 0;             
+       /*padding-bottom: 2vh;*/
        cursor: pointer;       
    }
    #folio-title{
@@ -364,14 +436,13 @@ input[type=submit]:hover {
        display: none;
    }
    .l-arrow, .r-arrow{              
-       font-size: 44px;       
-       padding: 3%;
+       font-size: 44px;             
    }
    .l-arrow{
-       padding-left: 5%;
+       padding-left: 8%;
    }
    .r-arrow{
-       padding-right: 5%;
+       padding-right: 8%;
    }
 
    .left-arrow, .right-arrow{
@@ -382,9 +453,10 @@ input[type=submit]:hover {
        display: none;
    }
 
-   #contact{
-       height: 100%;
+   .contact{
+       height: auto;
        cursor: pointer;
+       
        background-color: rgb(186, 245, 153);
    }
 
