@@ -104,10 +104,29 @@ $(document).ready(function (){
     });  
 
     //About section progress bar animations
-    $('.html').animate({width:'80%'},2000);
-    $('.css').animate({width:'70%'},2000);
-    $('.js').animate({width:'60%'},2000);
-    $('.php').animate({width:'50%'},2000);
-    $('.python').animate({width:'40%'},2000);
-    $('.java').animate({width:'60%'},2000);
+    //only display animation when visible
+    $.fn.isInViewport = function() {
+        var elementTop = $(this).offset().top;
+        var elementBottom = elementTop + $(this).outerHeight();
+      
+        var viewportTop = $(window).scrollTop();
+        var viewportBottom = viewportTop + $(window).height();
+      
+        return elementBottom > viewportTop && elementTop < viewportBottom
+        && elementTop > viewportTop && elementBottom < viewportBottom;
+      };
+      
+      $(window).on('resize scroll', function() {
+        
+          if ($("#skills").isInViewport()) {
+            $('.html').animate({width:'80%'},2000);
+            $('.css').animate({width:'70%'},2000);
+            $('.js').animate({width:'60%'},2000);
+            $('.php').animate({width:'40%'},2000);
+            $('.python').animate({width:'40%'},2000);
+            $('.java').animate({width:'60%'},2000);
+          }
+        
+      });
+    
 });
