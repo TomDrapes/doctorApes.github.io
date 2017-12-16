@@ -103,5 +103,11 @@ $(document).ready(function (){
         }
     });  
 
-    
+    //About section progress bar animations
+    $('.html').animate({width:'80%'},2000);
+    $('.css').animate({width:'70%'},2000);
+    $('.js').animate({width:'60%'},2000);
+    $('.php').animate({width:'50%'},2000);
+    $('.python').animate({width:'40%'},2000);
+    $('.java').animate({width:'60%'},2000);
 });
