@@ -225,13 +225,16 @@
             <h2>Contact Me</h2>
             
             <div id="contact-expand" class="container">
-                    <form action="/action_page.php">
+                    <form action="php/email_form.php">
                   
                       <label for="fname">First Name</label>
-                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                      <input type="text" id="fname" name="firstname" placeholder="Your name.." autofocus>
                   
                       <label for="lname">Last Name</label>
                       <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                      <label for="email">Email</label>
+                      <input type="text" id="email" name="mail" placeholder="something@email.com">
                   
                       <label for="country">Country</label>
                       <select id="country" name="country">
@@ -241,7 +244,7 @@
                       </select>
                   
                       <label for="subject">Subject</label>
-                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" type="text"></textarea>
                   
                       <input type="submit" value="Submit">
                   
