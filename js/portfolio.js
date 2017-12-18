@@ -62,6 +62,9 @@ $(document).ready(function (){
             if(aboutBool){
                 $("#about-expand").css("display", "block");
                 $("#about").css("padding-bottom", "10px");
+                $("#about")[0].scrollIntoView({
+                    behavior: "smooth"
+                });
                 aboutBool = !aboutBool;
             }else{
                 $("#about-expand").css("display", "none");
@@ -78,6 +81,9 @@ $(document).ready(function (){
             if(folioBool){
                 $("#folio-expand").css("display", "block");
                 $("#folio").css("padding-bottom", "2vh");
+                $("#folio")[0].scrollIntoView({
+                    behavior: "smooth"
+                });
                 folioBool = !folioBool;
             }else{
                 $("#folio-expand").css("display", "none");                
@@ -94,6 +100,9 @@ $(document).ready(function (){
             if(contactBool){
                 $("#contact-expand").css("display", "block");
                 //$("#contact").css("height", "auto");
+                $("#contact")[0].scrollIntoView({
+                    behavior: "smooth"
+                });
                 contactBool = !contactBool;
             }else{
                 $("#contact-expand").css("display", "none");                
