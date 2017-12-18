@@ -102,7 +102,7 @@ $(document).ready(function (){
             if(contactBool){
                 $("#contact-expand").css("display", "block");
                 //$("#contact").css("height", "auto");
-                $("#contact")[0].scrollIntoView({
+                $("#contact-expand")[0].scrollIntoView({
                     behavior: "smooth",
                     block: "start"
                 });
