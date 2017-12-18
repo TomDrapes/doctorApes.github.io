@@ -63,7 +63,8 @@ $(document).ready(function (){
                 $("#about-expand").css("display", "block");
                 $("#about").css("padding-bottom", "10px");
                 $("#about")[0].scrollIntoView({
-                    behavior: "smooth"
+                    behavior: "smooth",
+                    block: "start"
                 });
                 aboutBool = !aboutBool;
             }else{
@@ -82,7 +83,8 @@ $(document).ready(function (){
                 $("#folio-expand").css("display", "block");
                 $("#folio").css("padding-bottom", "2vh");
                 $("#folio")[0].scrollIntoView({
-                    behavior: "smooth"
+                    behavior: "smooth",
+                    block: "start"
                 });
                 folioBool = !folioBool;
             }else{
@@ -101,7 +103,8 @@ $(document).ready(function (){
                 $("#contact-expand").css("display", "block");
                 //$("#contact").css("height", "auto");
                 $("#contact")[0].scrollIntoView({
-                    behavior: "smooth"
+                    behavior: "smooth",
+                    block: "start"
                 });
                 contactBool = !contactBool;
             }else{
@@ -122,7 +125,7 @@ $(document).ready(function (){
         var viewportBottom = viewportTop + $(window).height();
       
         return elementBottom > viewportTop && elementTop < viewportBottom
-        && elementTop > viewportTop && elementBottom < viewportBottom;
+        /*&& elementTop > viewportTop && elementBottom < viewportBottom*/;
       };
       
       $(window).on('resize scroll', function() {
