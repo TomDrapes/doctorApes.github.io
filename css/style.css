@@ -42,8 +42,7 @@ body{
     height: auto;
     width: 100%;
     padding: 10px;                
-    z-index: 3;
-    line-height: 30px;
+    z-index: 3;    
 }
 
 .header{ 
@@ -81,6 +80,13 @@ body{
     height: auto;
     margin-top: 10px;
 }
+
+.expIcons{    
+    display: inline-block;    
+    font-size: 38px;
+    
+}
+
 
 .progressBar{
     position: relative;
@@ -217,15 +223,19 @@ h3{
 .left-arrow:hover, .right-arrow:hover{
     background-color: rgba(211, 211, 211, 0.75);
 }
-
-.link:hover{    
+.nav-cube{
+    float: left;
+}
+.nav-cube:hover, .link:hover{    
     opacity:0.55;    
     cursor: pointer;
     image-orientation: 90deg;    
 }
 .aboutnav, .portnav, .contactnav{
-    display: inline-block;
-    margin: 5px;    
+    /*display: inline-block;*/
+    margin-left: 10px;
+    margin-top: 15px; 
+    float: left;
 }
 .aboutnav:hover, .portnav:hover, .contactnav:hover{
     cursor: pointer;
@@ -254,9 +264,12 @@ a:hover{
     width:100%;    
     /*padding-top: 2vh;*/
 }
-
+form{
+    margin-bottom: 20px;
+}
 .text{
-    font-size: 24px;    
+    font-size: 24px; 
+    margin: 20px;   
 }
 
 .circle{
@@ -456,7 +469,8 @@ input[type=submit]:hover {
        display: none;
    }
    .l-arrow, .r-arrow{              
-       font-size: 44px;             
+       font-size: 44px;
+       padding-top: 8px;             
    }
    .l-arrow{
        padding-left: 8%;
