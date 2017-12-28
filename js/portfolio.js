@@ -5,14 +5,14 @@ $(document).ready(function (){
     $(".l-arrow, .left-arrow").on("click", function(){
         console.log("clicked");
         if(currentImage === 0){
-            currentImage = 3;            
+            currentImage = 4;            
         }else{
             currentImage -= 1;
         }
         changeImage(currentImage);
     });
     $(".r-arrow, .right-arrow").on("click", function(){
-        if(currentImage === 3){
+        if(currentImage === 4){
             currentImage = 0;            
         }else{
             currentImage += 1;
@@ -41,6 +41,10 @@ $(document).ready(function (){
             
             $("#folio").css("background-color", "rgb(133, 212, 133)");
             break;
+            case 4:turnOffAll();
+            $("#mockup").css("display", "block");
+            $("#folio").css("background-color", "rgb(20, 206, 209)");
+            break;
             
             
         }
@@ -53,6 +57,7 @@ $(document).ready(function (){
         $("#tictactoe").css("display", "none");
         $("#t-overlay").css("display", "none");
         $("#t-overlay2").css("display", "none");
+        $("#mockup").css("display", "none");
     }
 
     var aboutBool = true;

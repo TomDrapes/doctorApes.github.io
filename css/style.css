@@ -325,6 +325,18 @@ input[type=submit]:hover {
     margin-bottom: 10px;
 } 
 
+/* Mockup stuff */
+.mockup{
+    display: none;
+}
+.mock{
+    max-width:70%;
+    max-height:70%;
+    width: auto;
+    height: auto;
+}
+
+
 @media screen and (max-width: 700px){
 
     /* * *    * * *
@@ -418,8 +430,7 @@ input[type=submit]:hover {
         display: none;
     }
 
-    .overlay{
-        /*padding-top: 4vh;*/
+    .overlay{        
         height: 100%
     }
 
@@ -439,8 +450,7 @@ input[type=submit]:hover {
     .about{
         height: auto;
         overflow: auto;
-        cursor: pointer;
-        background-color:rgb(214, 105, 105); 
+        cursor: pointer;        
         background-color:rgb(211, 211, 211); 
         border-bottom: 1px solid black; 
         box-shadow: 0px 3px 3px #888888 inset;          
@@ -449,16 +459,12 @@ input[type=submit]:hover {
     }
 
     .about-boxes{
-        /*width: auto;
-        margin-right: 2.5%; */
-        
         text-align: center;   
     }
 
    .folio{
        height: auto;
-       padding-top: 0;             
-       /*padding-bottom: 2vh;*/
+       padding-top: 0;                    
        cursor: pointer;      
        border-bottom: 1px solid black;
 
@@ -497,9 +503,7 @@ input[type=submit]:hover {
 
    .contact{
        height: auto;
-       cursor: pointer;
-       
-       background-color: rgb(186, 245, 153);
+       cursor: pointer;              
        background-color:rgb(211, 211, 211);
        border-bottom: 1px solid black; 
        box-shadow: 0px 3px 3px #888888 inset;         
@@ -508,6 +512,11 @@ input[type=submit]:hover {
    #contact-expand{
        display: none;
    }
+
+   .mock{
+    max-width:100%;
+    max-height:100%;
+}
    
 }
 
