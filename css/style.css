@@ -262,7 +262,7 @@ a:hover{
 .folio{
     padding-top: 10vh;
     background-color: rgb(20, 206, 209); 
-    overflow-y: scroll;      
+    overflow: hidden;      
 }
 #folio-title{
     display: none;
@@ -289,7 +289,8 @@ form{
     background-color: white;
     margin: 20px;
     display: inline-block;
-    padding: 20px;    
+    padding: 20px;  
+      
 }
 
 .circle:hover{
@@ -533,10 +534,14 @@ hr{
         overflow: auto;
         cursor: pointer;        
         background-color:rgb(211, 211, 211); 
-        border-bottom: 1px solid black; 
-        box-shadow: 0px 3px 3px #888888 inset;          
+        /*border-bottom: 1px solid black; 
+        box-shadow: 0px 3px 3px #888888 inset;*/
         padding-bottom: 0;
                 
+    }
+
+    #about-expand{
+        /*display: none;*/
     }
 
     .about-boxes{
@@ -547,7 +552,7 @@ hr{
        height: auto;
        padding-top: 0;                    
        cursor: pointer;      
-       border-bottom: 1px solid black;
+       /*border-bottom: 1px solid black;*/
 
    }
    #folio-title{
@@ -555,13 +560,13 @@ hr{
        text-align: center;
        color: #000;
        height: 100%;
-       background-color:rgb(211, 211, 211); 
-       box-shadow: 0px 3px 3px #888888 inset;
+       /*background-color:rgb(211, 211, 211); 
+       box-shadow: 0px 3px 3px #888888 inset;*/
                  
    }
 
    #folio-expand{
-       display: none;
+       /*display: none;*/
    }
    .l-arrow, .r-arrow{              
        font-size: 44px;
@@ -577,21 +582,18 @@ hr{
    .left-arrow, .right-arrow{
        display: none;
    }
-
-   #about-expand{
-       display: none;
-   }
+   
 
    .contact{
        height: auto;
        cursor: pointer;              
        background-color:rgb(211, 211, 211);
-       border-bottom: 1px solid black; 
-       box-shadow: 0px 3px 3px #888888 inset;         
+       /*border-bottom: 1px solid black; 
+       box-shadow: 0px 3px 3px #888888 inset;*/
    }
 
    #contact-expand{
-       display: none;
+       /*display: none;*/
    }
 
    

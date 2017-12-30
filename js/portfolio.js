@@ -53,7 +53,7 @@ $(document).ready(function (){
         $("#t-overlay2").css("display", "none");    
     }
 
-    var aboutBool = true;
+    /*var aboutBool = true;
     $("#about").on("click", function(){        
         var windowWidth = window.outerWidth; 
         if(windowWidth < 700){
@@ -111,7 +111,7 @@ $(document).ready(function (){
                 contactBool = !contactBool;
             }
         }
-    });  
+    });  */
 
     //About section progress bar animations
     //only display animation when visible
@@ -139,7 +139,7 @@ $(document).ready(function (){
         
       });
 
-      $(window).on('resize', function(){
+      /*$(window).on('resize', function(){
         if(window.outerWidth > 700){
             console.log("should be working")
             $("#about-expand").css("display", "block");
@@ -154,6 +154,6 @@ $(document).ready(function (){
             $("#contact-expand").css("display", "none");
             aboutBool, folioBool, contactBool = false;
         }
-      });
+      });*/
     
 });
