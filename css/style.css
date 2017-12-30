@@ -37,6 +37,13 @@ body{
     float: right;
 }
 
+.mock-left{
+    float:left;
+}
+.mock-right{
+    float: right;
+}
+
 .navbar{
     position: fixed;
     height: auto;
@@ -80,7 +87,9 @@ body{
     height: auto;
     margin-top: 10px;
 }
-
+.icons{
+    margin: 20px;
+}
 .expIcons{    
     display: inline-block;    
     font-size: 38px;
@@ -326,6 +335,13 @@ input[type=submit]:hover {
     margin-bottom: 10px;
 } 
 
+input[type="submit"]{
+    background-color: rgb(119, 184, 214);
+}
+input[type="submit"]:hover{
+    background-color: rgb(164, 195, 209);
+}
+
 /* Mockup stuff */
 
 .mock2{
@@ -355,7 +371,7 @@ input[type=submit]:hover {
 }
 .view-button{
     
-    color: rgb(164, 195, 209);
+    color: white;
     text-align: center;
     background-color: rgb(164, 195, 209); 
 }
@@ -383,7 +399,24 @@ hr{
     border-color: rgb(196, 196, 196);
 }
 
+@media screen and (max-width: 900px){
+    .mock-right, .mock-left{
+        float: none;
+        
+    }
 
+    .mock2{
+        max-width:100%;
+        max-height: 100%;
+        text-align: center;
+
+    }
+
+    .text-box{
+        width: 100%;
+        padding-top: 25px;
+    }
+}
 
 @media screen and (max-width: 700px){
 
