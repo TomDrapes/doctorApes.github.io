@@ -252,7 +252,8 @@ a:hover{
 
 .folio{
     padding-top: 10vh;
-    background-color: rgb(20, 206, 209);       
+    background-color: rgb(20, 206, 209); 
+    overflow-y: scroll;      
 }
 #folio-title{
     display: none;
@@ -326,15 +327,62 @@ input[type=submit]:hover {
 } 
 
 /* Mockup stuff */
-.mockup{
-    display: none;
-}
-.mock{
+
+.mock2{
     max-width:70%;
     max-height:70%;
+    min-width: 240px;
+    min-height: 150px;
     width: auto;
     height: auto;
 }
+
+.mock-display{
+    overflow: hidden;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background-color: #eee;
+    height: auto;
+    width: auto;
+}
+
+.text-box{
+    padding-top: 50px;
+    height: auto;
+    width: 300px;
+}
+.view-button{
+    
+    color: rgb(164, 195, 209);
+    text-align: center;
+    background-color: rgb(164, 195, 209); 
+}
+.view-button:hover{
+    opacity: 0.7;
+}
+.only-floated{
+    overflow: hidden;
+}
+.bullet{
+    font-size: 18px;
+    
+    display: inline;
+    color: rgb(164, 195, 209);
+}
+
+.quote{
+    font-size: 24px;
+    font-style: italic;
+}
+
+hr{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border-color: rgb(196, 196, 196);
+}
+
 
 
 @media screen and (max-width: 700px){
@@ -513,10 +561,7 @@ input[type=submit]:hover {
        display: none;
    }
 
-   .mock{
-    max-width:100%;
-    max-height:100%;
-}
+   
    
 }
 

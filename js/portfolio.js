@@ -5,14 +5,14 @@ $(document).ready(function (){
     $(".l-arrow, .left-arrow").on("click", function(){
         console.log("clicked");
         if(currentImage === 0){
-            currentImage = 4;            
+            currentImage = 3;            
         }else{
             currentImage -= 1;
         }
         changeImage(currentImage);
     });
     $(".r-arrow, .right-arrow").on("click", function(){
-        if(currentImage === 4){
+        if(currentImage === 3){
             currentImage = 0;            
         }else{
             currentImage += 1;
@@ -40,13 +40,7 @@ $(document).ready(function (){
             $("#t-overlay").css("display", "block");
             
             $("#folio").css("background-color", "rgb(133, 212, 133)");
-            break;
-            case 4:turnOffAll();
-            $("#mockup").css("display", "block");
-            $("#folio").css("background-color", "rgb(20, 206, 209)");
-            break;
-            
-            
+            break;                                    
         }
     }
 
@@ -56,8 +50,7 @@ $(document).ready(function (){
         $("#simon").css("display", "none");
         $("#tictactoe").css("display", "none");
         $("#t-overlay").css("display", "none");
-        $("#t-overlay2").css("display", "none");
-        $("#mockup").css("display", "none");
+        $("#t-overlay2").css("display", "none");    
     }
 
     var aboutBool = true;
@@ -144,6 +137,23 @@ $(document).ready(function (){
             $('.java').animate({width:'60%'},2000);
           }
         
+      });
+
+      $(window).on('resize', function(){
+        if(window.outerWidth > 700){
+            console.log("should be working")
+            $("#about-expand").css("display", "block");
+            $("#folio-expand").css("display", "block");
+            $("#folio").css("padding-bottom", "2vh");
+            $("#contact-expand").css("display", "block");
+            aboutBool, folioBool, contactBool = true;
+        }else{
+            $("#about-expand").css("display", "none");
+            $("#folio-expand").css("display", "none");
+            $("#folio").css("padding-bottom", "0vh");
+            $("#contact-expand").css("display", "none");
+            aboutBool, folioBool, contactBool = false;
+        }
       });
     
 });
