@@ -1,6 +1,6 @@
 
 .pom{
-    padding-top: 5vh;
+    /*padding-top: 5vh;*/
 
 }
 .pomodoro{
@@ -13,7 +13,7 @@
     height: 300px;
     margin-left: auto;
     margin-right:auto;
-    margin-top: 5%;    
+    margin-top: 8%;    
     border-radius: 15%;
     border-bottom: 3px solid;
     border-right: 3px solid;
