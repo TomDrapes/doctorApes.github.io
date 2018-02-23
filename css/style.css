@@ -52,6 +52,16 @@ body{
     z-index: 3;    
 }
 
+.social-icon{
+    float: right;
+    margin: 5px;
+}
+
+.social-icon:hover{
+    opacity: 0.75;
+    cursor: pointer;
+}
+
 .header{ 
     background: url("../img/profile-bg.jpg") fixed;
     background-size: 100% 100%;
@@ -315,7 +325,7 @@ form{
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: rgb(147, 173, 185);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -325,7 +335,7 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: rgb(164, 195, 209);
 }
 
 /* Add a background color and some padding around the form */
@@ -336,12 +346,6 @@ input[type=submit]:hover {
     margin-bottom: 10px;
 } 
 
-input[type="submit"]{
-    background-color: rgb(147, 173, 185);
-}
-input[type="submit"]:hover{
-    background-color: rgb(164, 195, 209);
-}
 
 /* Mockup stuff */
 
@@ -540,10 +544,6 @@ hr{
                 
     }
 
-    #about-expand{
-        /*display: none;*/
-    }
-
     .about-boxes{
         text-align: center;   
     }
@@ -563,10 +563,6 @@ hr{
        /*background-color:rgb(211, 211, 211); 
        box-shadow: 0px 3px 3px #888888 inset;*/
                  
-   }
-
-   #folio-expand{
-       /*display: none;*/
    }
    .l-arrow, .r-arrow{              
        font-size: 44px;
@@ -591,12 +587,6 @@ hr{
        /*border-bottom: 1px solid black; 
        box-shadow: 0px 3px 3px #888888 inset;*/
    }
-
-   #contact-expand{
-       /*display: none;*/
-   }
-
-   
    
 }
 
