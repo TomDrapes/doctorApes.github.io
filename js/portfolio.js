@@ -1,6 +1,11 @@
 $(document).ready(function (){
     var currentImage = 0;
-    console.log("ready");
+
+    /*
+      This sets the current app to be displayed in the portfolio section
+      when the left or right arrow is clicked. It sets the required apps main div to display:block
+      while setting all others to display:none
+    */
 
     $(".l-arrow, .left-arrow").on("click", function(){
         console.log("clicked");
@@ -20,6 +25,7 @@ $(document).ready(function (){
         changeImage(currentImage);
     });
 
+    //Display only the current app and hide all others
     function changeImage(current){
         switch(current){
             case 0: turnOffAll();
@@ -37,13 +43,13 @@ $(document).ready(function (){
             break;
             case 3:turnOffAll();
             $("#tictactoe").css("display", "block");
-            $("#t-overlay").css("display", "block");
-            
+            $("#t-overlay").css("display", "block");            
             $("#folio").css("background-color", "rgb(133, 212, 133)");
             break;                                    
         }
     }
 
+    //Set all apps main div to display: none;
     function turnOffAll(){
         $("#pomodoro").css("display", "none");
         $("#calculator").css("display", "none");
@@ -53,66 +59,7 @@ $(document).ready(function (){
         $("#t-overlay2").css("display", "none");    
     }
 
-    /*var aboutBool = true;
-    $("#about").on("click", function(){        
-        var windowWidth = window.outerWidth; 
-        if(windowWidth < 700){
-            if(aboutBool){
-                $("#about-expand").css("display", "block");
-                $("#about").css("padding-bottom", "10px");
-                $("#about")[0].scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
-                });
-                aboutBool = !aboutBool;
-            }else{
-                $("#about-expand").css("display", "none");
-                $("#about").css("padding-bottom", "0px");
-                aboutBool = !aboutBool;
-            }
-        }
-    });
     
-    var folioBool = true;
-    $("#port").on("click", function(){
-        var windowWidth = window.outerWidth;
-        if(windowWidth < 700){
-            if(folioBool){
-                $("#folio-expand").css("display", "block");
-                $("#folio").css("padding-bottom", "2vh");
-                $("#folio")[0].scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
-                });
-                folioBool = !folioBool;
-            }else{
-                $("#folio-expand").css("display", "none");                
-                $("#folio").css("padding-bottom", "0");
-                folioBool = !folioBool;
-            }
-        }
-    });
-    
-    var contactBool = true;
-    $("#contact").on("click", function(){
-        var windowWidth = window.outerWidth;
-        if(windowWidth < 700){
-            if(contactBool){
-                $("#contact-expand").css("display", "block");
-                //$("#contact").css("height", "auto");
-                $("#contact-expand")[0].scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
-                });
-                contactBool = !contactBool;
-            }else{
-                $("#contact-expand").css("display", "none");                
-                //$("#contact").css("height", "100%");
-                contactBool = !contactBool;
-            }
-        }
-    });  */
-
     //About section progress bar animations
     //only display animation when visible
     $.fn.isInViewport = function() {
@@ -122,8 +69,7 @@ $(document).ready(function (){
         var viewportTop = $(window).scrollTop();
         var viewportBottom = viewportTop + $(window).height();
       
-        return elementBottom > viewportTop && elementTop < viewportBottom
-        /*&& elementTop > viewportTop && elementBottom < viewportBottom*/;
+        return elementBottom > viewportTop && elementTop < viewportBottom;
       };
       
       $(window).on('resize scroll', function() {
@@ -135,25 +81,6 @@ $(document).ready(function (){
             $('.php').animate({width:'40%'},2000);
             $('.python').animate({width:'40%'},2000);
             $('.java').animate({width:'60%'},2000);
-          }
-        
-      });
-
-      /*$(window).on('resize', function(){
-        if(window.outerWidth > 700){
-            console.log("should be working")
-            $("#about-expand").css("display", "block");
-            $("#folio-expand").css("display", "block");
-            $("#folio").css("padding-bottom", "2vh");
-            $("#contact-expand").css("display", "block");
-            aboutBool, folioBool, contactBool = true;
-        }else{
-            $("#about-expand").css("display", "none");
-            $("#folio-expand").css("display", "none");
-            $("#folio").css("padding-bottom", "0vh");
-            $("#contact-expand").css("display", "none");
-            aboutBool, folioBool, contactBool = false;
-        }
-      });*/
-    
+          }        
+      });     
 });
