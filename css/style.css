@@ -606,6 +606,24 @@ hr{
         text-align: center;   
     }
 
+    .about-info {
+        flex-direction: column;
+    }
+
+    .profile-photo {
+        margin-bottom: 10px;
+    }
+
+    .current-project {
+        flex-direction: column;
+    }
+
+    .epidash-preview {
+        margin: 10px;
+        width: 100%;
+        height: auto;
+    }
+
    .folio{
        height: auto;
        padding-top: 0;                    
