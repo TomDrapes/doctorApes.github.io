@@ -177,107 +177,112 @@
         </div><!--End mock-display-->
                 
         <div id="folio" class="folio fullScreen">
-                
-            <button id="left" class="black-text left left-arrow ">&#10094;</button>
-            <button id="right" class="black-text right right-arrow">&#10095;</button>
+            
+            
             <div id="folio-title" class="row">
                 <div class="col-xs-2 col-sm-2 l-arrow">&#10094;</div>
                 <div class="col-xs-8 col-sm-8"><h2 id="port">JS Apps</h2></div>
                 <div class="col-xs-2 col-sm-2 r-arrow">&#10095;</div>
             </div><!--End row-->
-            <div id="folio-expand">
+            
+            <div class="folio-js-apps">
+                
+                <button id="left" class="black-text left left-arrow ">&#10094;</button>
 
-                <div id="calculator" class="calculator">
-                        <h6>CALCULATOR TD-X</h6>
-                        <div id="screen" class="screen"></div><!--End screen-->
-                        <div id="buttons" class="buttons">
-                            <button id="7" class="button btn" value="7">7</button>
-                            <button id="8" class="button btn" value="8">8</button>
-                            <button id="9" class="button btn" value="9">9</button>            
-                            <button class="button btn" id="clear" value="ac">AC</button>
-                            <button id="4" class="button btn" value="4">4</button>
-                            <button id="5" class="button btn" value="5">5</button>
-                            <button id="6" class="button btn" value="6">6</button>
-                            <button class="divide button btn" id="divide" value="/">&#247</button>
-                            <button id="1" class="button btn" value="1">1</button>
-                            <button id="2" class="button btn" value="2">2</button>
-                            <button id="3" class="button btn" value="3">3</button>
-                            <button class="button btn" id="multiply" value="*">&times</button>
-                            <button class="button btn" id="decimal" value=".">.</button>
-                            <button id="0" class="button btn" value="0">0</button>
-                            <button class="button btn" id="add" value="+">+</button>
-                            <button class="button btn" id="subtract" value="-">-</button>
-                            <button class="button btn" id="equals" value="=">=</button>
-                
-                
-                        </div><!--End buttons-->
-                
-                </div><!--End calculator-->
-                                
-                <div class="pom">
-                    <div id=pomodoro class="pomodoro">
-                            <div id="label" class="label">Pomodoro</div>      
-                            <div id="timer" class="timer">25:00</div><!--End Timer-->
-                            <div id="pombuttons" class="pombuttons">
-                                <button id="minus" class="minus button btn">-</button>
-                                <button id="start" class="start button btn">Start</button>
-                                <button id="plus" class="plus button btn">+</button>
-                            </div>                    
-                            
-                    </div><!--End pomodoro-->
-                </div>
-
-                <div id="simon" class="simon">
-                        <div id="topLeft" class="topLeft cell"></div>
-                        <div id="topRight" class="topRight cell"></div>
-                        
-                        <div id="bottomLeft" class="bottomLeft cell"></div>
-                        <div id="bottomRight" class="bottomRight cell"></div>
+                <div id="folio-expand">
+                    <div id="calculator" class="calculator">
+                            <h6>CALCULATOR TD-X</h6>
+                            <div id="screen" class="screen"></div><!--End screen-->
+                            <div id="buttons" class="buttons">
+                                <button id="7" class="button btn" value="7">7</button>
+                                <button id="8" class="button btn" value="8">8</button>
+                                <button id="9" class="button btn" value="9">9</button>            
+                                <button class="button btn" id="clear" value="ac">AC</button>
+                                <button id="4" class="button btn" value="4">4</button>
+                                <button id="5" class="button btn" value="5">5</button>
+                                <button id="6" class="button btn" value="6">6</button>
+                                <button class="divide button btn" id="divide" value="/">&#247</button>
+                                <button id="1" class="button btn" value="1">1</button>
+                                <button id="2" class="button btn" value="2">2</button>
+                                <button id="3" class="button btn" value="3">3</button>
+                                <button class="button btn" id="multiply" value="*">&times</button>
+                                <button class="button btn" id="decimal" value=".">.</button>
+                                <button id="0" class="button btn" value="0">0</button>
+                                <button class="button btn" id="add" value="+">+</button>
+                                <button class="button btn" id="subtract" value="-">-</button>
+                                <button class="button btn" id="equals" value="=">=</button>
                     
-                        <div id="innerCircle" class="innerCircle">
-                            <div id="name" class="name">Simon<p>TM</p></div>
-                            <div id="simon-buttons" class="simon-buttons">
-                                <div id="b1" class="b1 inline">
-                                    <div id="button1" class="button1">--</div>
-                                    <div id="count" class="count">Count</div>
-                                </div>
-                                <div id="b2" class="b2 inline">
-                                    <div id="button2" class="button2"></div>
-                                    <div id="simon-start" class="simon-start">Start</div>
-                                </div>
-                                <div id="b3" class="b3 inline">
-                                <div id="button3" class="button3"></div>    
-                                <div id="strict" class="strict">Strict</div>
-                                </div>        
-                            </div>
-                
-                        </div>
-                </div><!--End simon-->
+                    
+                            </div><!--End buttons-->
+                    
+                    </div><!--End calculator-->
+                                    
+                    <div class="pom">
+                        <div id=pomodoro class="pomodoro">
+                                <div id="label" class="label">Pomodoro</div>      
+                                <div id="timer" class="timer">25:00</div><!--End Timer-->
+                                <div id="pombuttons" class="pombuttons">
+                                    <button id="minus" class="minus button btn">-</button>
+                                    <button id="start" class="start button btn">Start</button>
+                                    <button id="plus" class="plus button btn">+</button>
+                                </div>                    
+                                
+                        </div><!--End pomodoro-->
+                    </div>
+    
+                    <div id="simon" class="simon">
+                            <div id="topLeft" class="topLeft cell"></div>
+                            <div id="topRight" class="topRight cell"></div>
                             
-                <div id="tictactoe" class="tictactoe">  
-                    <div id="t-overlay" class="t-overlay">                            
-                        <h1 id="title" class="title">TIC-TAC-TOE</h1>
-                        <h2 id="one" class="one">ONE PLAYER</h2>
-                        <h2 id ="two" class="two">TWO PLAYER</h2>                        
-                    </div>
-                    <div id="t-overlay2" class="t-overlay2">
-                        <h1 id="title" class="title">Select Player</h1>
-                        <h2 id="O" class="O">O</h2>
-                        <h2 id ="X" class="X">X</h2>
-                    </div>              
-                    <div id="border" class="border">                    
-                        <div id="1-1" class="t-cell"></div>        
-                        <div id="1-2" class="t-cell"></div>
-                        <div id="1-3" class="t-cell"></div>
-                        <div id="2-1" class="t-cell"></div>
-                        <div id="2-2" class="t-cell"></div>
-                        <div id="2-3" class="t-cell"></div>
-                        <div id="3-1" class="t-cell"></div>
-                        <div id="3-2" class="t-cell"></div>
-                        <div id="3-3" class="t-cell"></div>                    
-                    </div>
-                </div><!--End tictactoe-->                      
-            </div><!--End folio-expand-->                
+                            <div id="bottomLeft" class="bottomLeft cell"></div>
+                            <div id="bottomRight" class="bottomRight cell"></div>
+                        
+                            <div id="innerCircle" class="innerCircle">
+                                <div id="name" class="name">Simon<p>TM</p></div>
+                                <div id="simon-buttons" class="simon-buttons">
+                                    <div id="b1" class="b1 inline">
+                                        <div id="button1" class="button1">--</div>
+                                        <div id="count" class="count">Count</div>
+                                    </div>
+                                    <div id="b2" class="b2 inline">
+                                        <div id="button2" class="button2"></div>
+                                        <div id="simon-start" class="simon-start">Start</div>
+                                    </div>
+                                    <div id="b3" class="b3 inline">
+                                    <div id="button3" class="button3"></div>    
+                                    <div id="strict" class="strict">Strict</div>
+                                    </div>        
+                                </div>
+                    
+                            </div>
+                    </div><!--End simon-->
+                                
+                    <div id="tictactoe" class="tictactoe">  
+                        <div id="t-overlay" class="t-overlay">                            
+                            <h1 id="title" class="title">TIC-TAC-TOE</h1>
+                            <h2 id="one" class="one">ONE PLAYER</h2>
+                            <h2 id ="two" class="two">TWO PLAYER</h2>                        
+                        </div>
+                        <div id="t-overlay2" class="t-overlay2">
+                            <h1 id="title" class="title">Select Player</h1>
+                            <h2 id="O" class="O">O</h2>
+                            <h2 id ="X" class="X">X</h2>
+                        </div>              
+                        <div id="border" class="border">                    
+                            <div id="1-1" class="t-cell"></div>        
+                            <div id="1-2" class="t-cell"></div>
+                            <div id="1-3" class="t-cell"></div>
+                            <div id="2-1" class="t-cell"></div>
+                            <div id="2-2" class="t-cell"></div>
+                            <div id="2-3" class="t-cell"></div>
+                            <div id="3-1" class="t-cell"></div>
+                            <div id="3-2" class="t-cell"></div>
+                            <div id="3-3" class="t-cell"></div>                    
+                        </div>
+                    </div><!--End tictactoe-->                      
+                </div><!--End folio-expand-->    
+                <button id="right" class="black-text right right-arrow">&#10095;</button>            
+            </div>
         </div><!--End portfolio-->
 
         <div id="contact" class="contact black-text text-center">

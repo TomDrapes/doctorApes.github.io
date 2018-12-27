@@ -241,9 +241,18 @@ h3{
     font-size:44px;
     background-color: rgba(211, 211, 211, 0.35);
     border: none;    
-    margin-top: 30vh;
     border-radius: 100%;
     z-index: 1000;
+}
+
+.left-arrow {
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+.right-arrow {
+    margin-right: 20px;
+    margin-left: auto;
 }
 
 .left-arrow:hover, .right-arrow:hover{
@@ -280,9 +289,16 @@ a:hover{
 }
 
 .folio{
-    padding-top: 10vh;
     background-color: rgb(20, 206, 209); 
-    overflow: hidden;      
+    overflow: hidden;
+}
+
+.folio-js-apps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
 }
 
 #folio-title{
